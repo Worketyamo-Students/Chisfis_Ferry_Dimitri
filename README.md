@@ -1,4 +1,4 @@
-# React + TypeScript + Vite + ShadCN + Prisma + React-Icons + Zustand + TailwindCSS Template
+# React + TypeScript + Vite + ShadCN + React-Icons + Zustand + TailwindCSS Template
 
 Officially created for the **Chisfis - Booking Online Project** of **Students of Work Et Yamo**.
 
@@ -26,13 +26,13 @@ Ce template est une base de projet intégrant les meilleures technologies modern
 
 ## 📦 Installation
 
-Suivez les étapes ci-dessous pour démarrer avec ce template :
+Suivez les étapes ci-dessous pour démarrer avec ce projet:
 
 ### 1. Clonez le dépôt :
 
 ```bash
-git clone https://github.com/DimitriTedom/nom-du-repo.git
-cd nom-du-repo
+git clone https://github.com/Worketyamo-Students/Chisfis_Ferry_Dimitri.git
+cd Chisfis_Ferry_Dimitri
 ```
 
 ### 2. Installez les dépendances :
@@ -43,16 +43,7 @@ Assurez-vous d'être dans le bon dossier, puis installez toutes les dépendances
 npm install
 ```
 
-### 3. Configurer la base de données avec Prisma :
-
-- Modifiez le fichier `.env` pour y ajouter vos informations de connexion à la base de données.
-- Exécutez les migrations pour créer le schéma de base de données :
-
-```bash
-npx prisma migrate dev --name init
-```
-
-### 4. Lancez le projet en mode développement :
+### 3. Lancez le projet en mode développement :
 
 ```bash
 npm run dev
@@ -60,23 +51,6 @@ npm run dev
 
 Accédez ensuite à [http://localhost:3000](http://localhost:3000) pour voir le projet en cours d'exécution.
 
-## 🐳 Utiliser Docker (optionnel)
-
-Pour déployer l'application à l'aide de Docker, suivez ces étapes :
-
-### 1. Construire l'image Docker :
-
-```bash
-npm run docker-build
-```
-
-### 2. Lancer le conteneur :
-
-```bash
-npm run docker-run
-```
-
-Cela vous permettra de faire tourner l'application dans un conteneur Docker sur le port 3000.
 
 ## ⚙️ Scripts Disponibles
 
@@ -88,45 +62,9 @@ Voici quelques scripts utiles pour gérer le projet :
 - **`npm run docker-build`** : Construire une image Docker de l'application.
 - **`npm run docker-run`** : Lancer l'image Docker construite.
 
-## 📁 Structure du Projet
 
-Voici un aperçu de la structure du projet :
 
-```
-mon-template/
-├── prisma/               # Dossier des schémas Prisma
-│   └── schema.prisma     # Schéma de base de données Prisma
-├── src/                  # Code source principal
-│   ├── assets/           # Fichiers statiques comme les images
-│   ├── components/       # Composants réutilisables de React
-│   ├── pages/            # Pages principales de l'application
-│   ├── store/            # Store Zustand pour la gestion de l'état
-│   └── index.tsx         # Fichier principal pour démarrer React
-├── .env                  # Fichier de configuration de l'environnement
-├── Dockerfile            # Dockerfile pour la création de l'image
-├── package.json          # Dépendances et scripts du projet
-└── tailwind.config.js    # Configuration de TailwindCSS
-```
+## 👤 Contributors
 
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! Si vous avez des idées pour améliorer ce template, n'hésitez pas à forker le dépôt et à soumettre une pull request. Vous pouvez également ouvrir une **issue** si vous rencontrez des problèmes.
-
-### Comment Contribuer :
-
-1. **Forker** le dépôt.
-2. **Créer** une nouvelle branche (par exemple, `feature/ma-nouvelle-fonctionnalité`).
-3. **Faire** vos modifications.
-4. **Pousser** la branche sur votre fork.
-5. **Ouvrir** une pull request sur le dépôt d'origine.
-
-## 👤 Template Creator
-
-Créé par : [DimitriTedom alias SnowDev](https://github.com/DimitriTedom)
-
-## 📄 Licence
-
-Ce projet est sous licence **MIT** - voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
----
-
+[DimitriTedom alias SnowDev](https://github.com/DimitriTedom)
+[Simo Ferry](https://github.com/ferry237)
