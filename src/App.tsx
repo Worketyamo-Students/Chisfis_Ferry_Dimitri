@@ -1,16 +1,25 @@
-import { useState } from 'react';
+import React from 'react';
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from 'react-router-dom';
+
+import HomeComponent from './components/pages/Home/Home.Components';
+import OnlineBookingComponent
+  from './components/pages/MesPages/OnlineBookingPages';
 
 function App() {
-
   return (
-    <>
-      <section className='w-screen h-screen bg-slate-600 flex justify-center items-center text-[3rem]'>
-         
-         <div> <p>bonjour</p></div>
-
-      </section>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomeComponent />} />
+        <Route path="/realestate" element={<OnlineBookingComponent />} />
+        {/* Tu peux utiliser UnderConstruction pour d'autres routes */}
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
