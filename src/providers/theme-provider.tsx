@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../index.css'
 import { MdDarkMode } from "react-icons/md";
-import { FaSun } from "react-icons/fa6";
+import { BsSun } from "react-icons/bs";
 
 
 const ThemeProvider = () => {
@@ -28,7 +28,7 @@ const ThemeProvider = () => {
   return (
     <button onClick={handleThemeSwitch}>
         {
-            theme === 'dark' ? <FaSun size={20}/> : <MdDarkMode size={20} />
+            theme === 'dark' ? <BsSun size={25}/> : <MdDarkMode size={25} />
         }
     </button>
 )

@@ -1,10 +1,11 @@
 import '../../index.css'
 import ThemeProvider from '@/providers/theme-provider'
 import { FaBell } from 'react-icons/fa6'
+
 const Header1 = () => {
 
   return (
-    <header className=" container flex w-full items-center font-poppins dark:text-white">
+    <header className=" container flex w-full items-center font-poppins dark:text-white px-[5rem]">
     <div className='container'>
       <div className=" mx-4 flex items-center justify-between">
         <div className='w-16'>
@@ -15,7 +16,7 @@ const Header1 = () => {
           <div>
             <nav className='flex items-center right-0 w-full py-4 px-6'>
               <ul className='w-full flex space-x-12 items-center'>
-                <li className='duration-300 hover:text-black'><a href="#"><div  className='border decoration-solid bg-[#F3F4F6] px-4 py-2 items-center justify-center flex rounded-3xl dark:text-[#6B7280] dark:hover:text-black'>Home</div></a></li>
+                <li className='duration-300 hover:text-black'><a href="#"><div  className='border decoration-solid bg-[#F3F4F6] px-4 py-2 items-center justify-center flex rounded-3xl dark:text-[#6B7280] dark:hover:text-black duration-300'>Home</div></a></li>
                 <li  className='duration-300 hover:text-black dark:hover:text-[#6B7280]'><a href="#">Life style</a></li>
                 <li  className='duration-300 hover:text-black dark:hover:text-[#6B7280]'><a href="#">Template</a></li>
                 <li  className='duration-300 hover:text-black dark:hover:text-[#6B7280]'><a href="#">Archive Page</a></li>
@@ -27,7 +28,7 @@ const Header1 = () => {
           <div className='flex gap-4 justify-between'>
             <ThemeProvider/>
 
-            <div className='hover:bg-[#6B7280] rounded-[50%] p-2 hover:text-white'>
+            <div className='hover:bg-[#6B7280] rounded-[50%] p-2 hover:text-white duration-300 cursor-pointer'>
             <FaBell size={20}/>
             </div>
             

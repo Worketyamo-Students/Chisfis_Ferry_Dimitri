@@ -63,8 +63,8 @@ export default {
 			  white: "#FFFFFF",
 			  light: "#FFFFFF",
 			  black: "#000000",
-			  dark: "#1D2144",
-			  primary: "#4F46E5",
+			  primary: "#6B7280",
+			  secondary: "#4F46E5",
 
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
