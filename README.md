@@ -48,10 +48,6 @@ npm install
 ```bash
 npm run dev
 ```
-
-Accédez ensuite à [http://localhost:3000](http://localhost:3000) pour voir le projet en cours d'exécution.
-
-
 ## ⚙️ Scripts Disponibles
 
 Voici quelques scripts utiles pour gérer le projet :
