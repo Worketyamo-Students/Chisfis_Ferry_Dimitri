@@ -17,7 +17,6 @@ Ce projet est le premier projet final de notre formation en developement web ful
 - TypeScript : Superset de JavaScript qui ajoute des types statiques pour améliorer la fiabilité et la maintenabilité.
 - Vite : Un outil de construction rapide pour le développement moderne de projets React.
 - ShadCN/UI : Une collection de composants UI utilisant Radix UI et TailwindCSS.
-- Prisma : ORM (Object-Relational Mapping) permettant d'interagir facilement avec la base de données.
 - React-Icons : Collection d'icônes pour ajouter des éléments visuels attrayants.
 - Zustand : Une librairie légère pour la gestion de l'état dans React.
 - TailwindCSS : Un framework CSS utilitaire permettant de créer des designs modernes et responsives facilement.
