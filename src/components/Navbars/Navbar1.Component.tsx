@@ -7,6 +7,7 @@ import {
 
 import { ButtonIcon } from '../BlackWhiteButton';
 import PopoverCustum from '../ButtonIcon';
+import ButtonComponent from '../ButtonsComponent/buttonCustumLogin';
 import NavMenuTriggerComponent from '../componentCustum/NavMenuCustum';
 import NavMenuComponent from '../componentCustum/NavMenuLinkCustum';
 
@@ -77,6 +78,8 @@ const Navbar1Component = () => {
             </NavigationMenu>
          <ButtonIcon/>
          <PopoverCustum/>
+         <ButtonComponent/>
+       
 
         </nav>
     )
