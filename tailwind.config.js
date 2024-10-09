@@ -53,7 +53,9 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-			navtext1:'rgba(107, 114, 128, 1)'
+			navtext1:'rgba(107, 114, 128, 1)',
+			PrimaryCol:'rgba(79, 70, 229, 1)',
+			SecondCol:'rgba(79, 70, 200, 1)'
   		},
 		  fontFamily: {
 			Inter:'var(--Inter)',
