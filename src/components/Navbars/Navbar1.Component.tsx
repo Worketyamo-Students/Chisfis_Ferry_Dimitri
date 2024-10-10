@@ -7,13 +7,14 @@ import {
 
 import { ButtonIcon } from '../BlackWhiteButton';
 import PopoverCustum from '../ButtonIcon';
+import ButtonComponent from '../ButtonsComponent/buttonCustumLogin';
 import NavMenuTriggerComponent from '../componentCustum/NavMenuCustum';
 import NavMenuComponent from '../componentCustum/NavMenuLinkCustum';
 
 const Navbar1Component = () => {
 
     return (
-
+<>      <div className='flex items-center justify-between w-full'>
         <nav className=" flex flex-row gap-3 items-center">
             <NavigationMenu >
                 <NavigationMenuList>
@@ -75,10 +76,16 @@ const Navbar1Component = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-         <ButtonIcon/>
-         <PopoverCustum/>
-
+       
         </nav>
+
+            <div className='space-x-4'>
+            <ButtonIcon/>
+            <PopoverCustum/>
+            <ButtonComponent/>
+            </div>
+ </div>
+</>
     )
 }
 export default Navbar1Component

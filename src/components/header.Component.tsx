@@ -5,7 +5,7 @@ const HeaderComponent = ()=>{
 
     return (
 
-        <header className="w-full h-[8.8rem] px-[25rem] items-center flex">
+        <header className="w-full h-[8.8rem] px-[18rem] items-center flex gap-[6rem]">
             <LogoComponent/>
            
             <Navbar1Component/>
