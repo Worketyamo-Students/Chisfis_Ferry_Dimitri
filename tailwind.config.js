@@ -55,7 +55,8 @@ module.exports = {
   			},
 			navtext1:'rgba(107, 114, 128, 1)',
 			PrimaryCol:'rgba(79, 70, 229, 1)',
-			SecondCol:'rgba(79, 70, 200, 1)'
+			SecondCol:'rgba(79, 70, 200, 1)',
+			dark_color : '#111827'
   		},
 		  fontFamily: {
 			Inter:'var(--Inter)',

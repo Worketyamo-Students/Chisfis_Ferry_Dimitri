@@ -14,7 +14,7 @@ import NavMenuComponent from '../componentCustum/NavMenuLinkCustum';
 const Navbar1Component = () => {
 
     return (
-
+<>      <div className='flex items-center justify-between w-full'>
         <nav className=" flex flex-row gap-3 items-center">
             <NavigationMenu >
                 <NavigationMenuList>
@@ -80,8 +80,15 @@ const Navbar1Component = () => {
          <PopoverCustum/>
          <ButtonComponent/>
        
-
         </nav>
+
+            <div className='space-x-4 flex items-center'>
+            <ButtonIcon/>
+            <PopoverCustum/>
+            <ButtonComponent/>
+            </div>
+ </div>
+</>
     )
 }
 export default Navbar1Component

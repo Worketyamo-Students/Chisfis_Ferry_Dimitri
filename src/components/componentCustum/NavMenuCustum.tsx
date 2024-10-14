@@ -10,7 +10,7 @@ const NavMenuTriggerComponent:React.FC<TextProps> = ({
     })=>{
 
     return (
-        <NavigationMenuTrigger  className={'w-fit h-[4rem] rounded-full hover:bg-neutral-100 font-Poppins text-[1.8rem] text-navtext1 hover:text-neutral-900 font-normal'}>{text}</NavigationMenuTrigger>
+        <NavigationMenuTrigger  className={'w-fit h-[4rem] rounded-full hover:bg-neutral-100 font-Poppins text-[1.8rem] text-navtext1 hover:text-neutral-900 font-normal dark:bg-transparent dark:text-white'}>{text}</NavigationMenuTrigger>
     )
 }
 
