@@ -84,3 +84,14 @@ body{
   width: 100vw;
   height: 100vh;
 }
+#header1{
+  border-bottom: 1px solid gray;
+}
+
+#footer{  
+border-top: 1px solid gray;
+}
+
+#social{
+  color: gray;
+}

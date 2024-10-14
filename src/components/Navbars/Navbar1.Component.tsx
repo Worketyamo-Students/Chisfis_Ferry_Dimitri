@@ -79,7 +79,7 @@ const Navbar1Component = () => {
        
         </nav>
 
-            <div className='space-x-4'>
+            <div className='space-x-4 flex items-center'>
             <ButtonIcon/>
             <PopoverCustum/>
             <ButtonComponent/>

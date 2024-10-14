@@ -30,9 +30,9 @@ const handleThemeSwich = () =>{
   setTheme(theme === 'dark' ? 'light' : 'dark');
 }
   return (
-    <Button onClick={handleThemeSwich} className='bg-none'>
+    <Button onClick={handleThemeSwich} className='bg-transparent hover:bg-transparent shadow-none'>
       {
-        theme === 'dark' ? <Sun size={35}/> : <Moon size={35}/>
+        theme === 'dark' ? <Sun size={35} className='text-white'/> : <Moon size={35} className='text-black'/>
       }
     </Button>
   );
