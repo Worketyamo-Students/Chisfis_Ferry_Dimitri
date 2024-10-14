@@ -76,10 +76,6 @@ const Navbar1Component = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-         <ButtonIcon/>
-         <PopoverCustum/>
-         <ButtonComponent/>
-       
         </nav>
 
             <div className='space-x-4 flex items-center'>

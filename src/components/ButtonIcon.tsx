@@ -12,13 +12,17 @@ const PopoverCustum = () => {
     return (
         <Popover>
             <PopoverTrigger>
-               <ButtonIcon/>
+               <ButtonIcon />
             </PopoverTrigger>
-            <PopoverContent className={'flex items-center self-start absolute right-0 w-[40rem] h-[4.5rem] border-solid border-[0.3rem] rounded-full p-0 border-teal-400 dark:border-none'
-             <Input type="text" placeholder="Type and press enter" className='w-full h-full rounded-full px-[1.5rem] text-[1.7rem]'/>
+            <PopoverContent className={'flex items-center self-start absolute right-0 w-[40rem] h-[4.5rem] border-solid border-[0.3rem] rounded-full p-0 border-teal-400 dark:border-none'}>
+                <Input
+                    type="text"
+                    placeholder="Type and press enter"
+                    className="w-full h-full rounded-full px-[1.5rem] text-[1.7rem]"
+                />
             </PopoverContent>
         </Popover>
-    )
-}
+    );
+};
 
-export default PopoverCustum
+export default PopoverCustum;
