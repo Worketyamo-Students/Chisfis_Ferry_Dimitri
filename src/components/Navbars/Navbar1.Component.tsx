@@ -76,6 +76,9 @@ const Navbar1Component = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
+         <ButtonIcon/>
+         <PopoverCustum/>
+         <ButtonComponent/>
        
         </nav>
 
