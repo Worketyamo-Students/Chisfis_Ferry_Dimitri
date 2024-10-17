@@ -4,7 +4,7 @@ function HomeComponent() {
 
   return (
     <>
-      <section className='w-screen h-screen flex flex-col text-[3rem] gap-28'>
+      <section className='flex flex-col text-[3rem] gap-28'>
 
          <HeaderComponent/>
          <FooterComponent/>
