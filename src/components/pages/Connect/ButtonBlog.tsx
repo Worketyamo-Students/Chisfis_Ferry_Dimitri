@@ -15,7 +15,7 @@ const ButtonBlog = () => {
                 
             return(
 
-                <Link key={index} to={bouton.to} className='relative flex items-center justify-center space-x-2 dark:bg-[#1f2937] dark:text-white text-black w-[45rem] py-5 px-4 bg-[#eef2ff] rounded-[16px] hover:bottom-[1px] duration-1000'>
+                <Link key={index} to={bouton.to} className='relative flex items-center justify-center space-x-2 dark:bg-[#1f2937] dark:text-white text-black w-full py-5 px-4 bg-[#eef2ff] rounded-[16px] hover:bottom-[1px] duration-1000'>
                 <div className='absolute left-4'>{bouton.icon}</div>
                 <span className='text-center text-[1.4rem]'>{bouton.content}</span>
                 </Link>
