@@ -3,19 +3,14 @@ import PasswordBoxForm from "./passwordBox.Form"
 import ContinueBouton from "./ContinueBouton"
 import CreateAccountBouton from "./CreateAccountBouton"
 
-interface FormContentProps {
-    onToggleForm : ()=> void;
-    onTogglePass : ()=>void;
-
-}
-const FormContent = ({onToggleForm,onTogglePass}:FormContentProps) => {
+const FormContent = () => {
   return (
     <div>
         <form className="flex flex-col gap-y-10">
             <MailBox/>
-            <PasswordBoxForm toggleFormPass={onTogglePass}/>
+            <PasswordBoxForm/>
             <ContinueBouton title="continue"/>
-            <CreateAccountBouton onToggleForm ={onToggleForm} boutonTitle="create an account" question="New user?"/>
+            <CreateAccountBouton  boutonTitle="create an account" question="New user?"/>
         </form>
     </div>
   )

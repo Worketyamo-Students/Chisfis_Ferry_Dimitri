@@ -69,9 +69,15 @@ const Navbar1Component = () => {
                     <NavigationMenuItem   >
                         <NavMenuTriggerComponent text='Other Pages'/>
                         <NavigationMenuContent  className={'flex flex-col p-[1rem] w-fit h-fit gap-2'}>
-                            <NavMenuComponent url='/' text='Online Booking'/>
-                            <NavMenuComponent url='/realestate' text='Real estate'/>
-                            <NavMenuComponent url='/realestate' text='Home 3'/>
+                            <NavMenuComponent url='/' text='+Add listing'/>
+                            <NavMenuComponent url='/realestate' text='Blog page'/>
+                            <NavMenuComponent url='/realestate' text='Blog single'/>
+                            <NavMenuComponent url='/realestate' text='About'/>
+                            <NavMenuComponent url='/realestate' text='Contact us'/>
+                            <NavMenuComponent url='/login' text='Login'/>
+                            <NavMenuComponent url='/sign-up' text='Sign up'/>
+
+
                         </NavigationMenuContent>
                     </NavigationMenuItem>
                 </NavigationMenuList>

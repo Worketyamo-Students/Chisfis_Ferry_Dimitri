@@ -4,7 +4,7 @@ import { FcGoogle } from "react-icons/fc";
 import { Link } from 'react-router-dom';
 
 const blockButton = [
-    {content:"Continue with Facebook",icon :<AiOutlineFacebook color='#3b5998' size={24}/>, to : "/"},
+    {content:"Continue with Facebook",icon :<AiOutlineFacebook color='#3b5998' size={24}/>, to : "/7"},
     {content:"Continue with Google",icon :<FcGoogle size={24}/> , to : "/"},
     {content:"Continue with Twitter",icon : <AiOutlineTwitter color='#000000' size={24}/>, to : "/"}
 ]

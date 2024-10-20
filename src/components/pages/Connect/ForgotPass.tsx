@@ -1,14 +1,17 @@
 import FormTitle from "./FormTitle";
 import MailBox from "./MailBox.Form";
 import ContinueBouton from "./ContinueBouton";
-interface ForgotPassProps {
-  onTogglePass: () => void; 
-  onToggleSignup : ()=> void;
-}
-
-const ForgotPass = ({ onTogglePass,onToggleSignup }: ForgotPassProps) => {
+import { useNavigate } from "react-router-dom";
+import HeaderComponent from "@/components/header.Component";
+const ForgotPass = () => {
+  const navigate = useNavigate()
   return (
-    <div className="flex flex-col shadow-2xl border rounded-[40px] px-[30rem] py-[8rem] text-[1.5rem]">
+    <div>
+      <HeaderComponent/>
+
+      <div className="flex items-center justify-center py-[4rem]">
+
+      <div className="flex flex-col shadow-2xl border rounded-[40px] px-[30rem] py-[8rem] text-[1.5rem]">
      <div className="mb-[4rem]">
      <FormTitle title="Forgot password" comment="we will sent password introduction to your email"/> 
      </div>
@@ -21,13 +24,13 @@ const ForgotPass = ({ onTogglePass,onToggleSignup }: ForgotPassProps) => {
       <div className="space-x-1">
       <button
         className="text-blue-500 hover:text-blue-700 duration-500"
-        onClick={onTogglePass}>
+        onClick={()=>{navigate('/login')}}>
         Sign in
       </button> /
 
       <button
         className="text-blue-500 hover:text-blue-700 duration-500"
-        onClick={onToggleSignup}>
+        onClick={()=>{navigate('/sign-up')}}>
         Sign up
       </button>
       </div>
@@ -35,6 +38,10 @@ const ForgotPass = ({ onTogglePass,onToggleSignup }: ForgotPassProps) => {
     </div>
      
     </div>
+      </div>
+
+    </div>
+   
   );
 };
 
