@@ -1,6 +1,7 @@
 import HeaderComponent from '@/components/header.Component';
 import FooterComponent from '@/components/Footer.Component';
 import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
+import CarouselParent from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
 function HomeComponent() {
 
   return (
@@ -9,6 +10,7 @@ function HomeComponent() {
 
          <HeaderComponent/>
         <BenefitsComponent/>
+        <CarouselParent/>
          <FooterComponent/>
 
       </section>
