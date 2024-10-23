@@ -19,39 +19,39 @@ export function CarouselSize() {
     },
     {
       image: "../../../src/assets/Image.svg",
-      title: "Explore the desert sands",
+      title: "Sleep in a floating way",
       properties: "94,500 properties",
-      to: "/desert-exploration",
+      to: "/listing-stay-map",
     },
     {
       image: "../../../src/assets/Image2.svg",
-      title: "Relax in the tropical sun",
+      title: "Cool in the deep forest",
       properties: "120,600 properties",
-      to: "/tropical-getaway",
+      to: "/listing-stay-map",
     },
     {
       image: "../../../src/assets/Image3.svg",
-      title: "Mountain retreats",
+      title: "In the billionaire's house",
       properties: "55,300 properties",
-      to: "/mountain-retreats",
+      to: "/listing-stay-map",
     },
     {
       image: "../../../src/assets/Image.svg",
       title: "City escapes",
       properties: "210,400 properties",
-      to: "/city-escapes",
+      to: "/listing-stay-map",
     },
     {
       image: "../../../src/assets/Image2.svg",
       title: "Lakeside relaxation",
       properties: "98,200 properties",
-      to: "/lakeside-relaxation",
+      to: "/listing-stay-map",
     },
     {
       image: "../../../src/assets/Image3.svg",
       title: "Snowy adventures",
       properties: "68,000 properties",
-      to: "/snowy-adventures",
+      to: "/listing-stay-map",
     },
   ];
   const [currentIndex,setCurrentIndex] = useState(0)
