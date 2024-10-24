@@ -10,6 +10,7 @@ import PopoverCustum from '../ButtonIcon';
 import ButtonComponent from '../ButtonsComponent/buttonCustumLogin';
 import NavMenuTriggerComponent from '../componentCustum/NavMenuCustum';
 import NavMenuComponent from '../componentCustum/NavMenuLinkCustum';
+import ContentListing from './ContentListing';
 
 const Navbar1Component = () => {
 
@@ -44,11 +45,9 @@ const Navbar1Component = () => {
                 <NavigationMenuList>
                     <NavigationMenuItem   >
                         <NavMenuTriggerComponent text='Listing Pages'/>
-                        <NavigationMenuContent  className={'flex flex-col p-[1rem] w-fit h-fit gap-2'}>
-                            <NavMenuComponent url='/' text='Online Booking'/>
-                            <NavMenuComponent url='/realestate' text='Real estate'/>
-                            <NavMenuComponent url='/realestate' text='Home 3'/>
-                        </NavigationMenuContent>
+                           <NavigationMenuContent  className={'flex flex-col gap-2'}>
+                            <ContentListing/>
+                          </NavigationMenuContent>
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
@@ -81,7 +80,7 @@ const Navbar1Component = () => {
             <div className='space-x-4 flex items-center'>
             <ButtonIcon/>
             <PopoverCustum/>
-            <ButtonComponent/>
+            <ButtonComponent titre='signUp' text='Sign Up'/>
             </div>
  </div>
 </>

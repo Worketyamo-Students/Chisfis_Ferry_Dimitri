@@ -6,9 +6,8 @@ import {
   Routes,
 } from 'react-router-dom';
 
-import HomeComponent from './components/pages/Home/Home.Components';
-import OnlineBookingComponent
-  from './components/pages/MesPages/OnlineBookingPages';
+import HomeComponent from './pages/Home/Home1.Components';
+import OnlineBookingComponent from './pages/MesPages/OnlineBookingPages';
 
 function App() {
   return (

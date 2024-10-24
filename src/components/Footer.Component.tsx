@@ -1,5 +1,7 @@
-import IfisComponent from "./Footers/ifis.Component"
-import '../index.css'
+import '../index.css';
+
+import IfisComponent from './Footers/ifis.Component';
+
 const FooterComponent = () => {
   return (
     <footer className="flex space-x-16 items-center p-[16rem] border-b-4 border-gray-600 bg-red-300" id="footer">
