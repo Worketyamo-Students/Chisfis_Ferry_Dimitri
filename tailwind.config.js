@@ -54,6 +54,7 @@ module.exports = {
   				'5': 'hsl(var(--chart-5))'
   			},
 			navtext1:'rgba(107, 114, 128, 1)',
+			color_g:'#9CA3AF',
 			PrimaryCol:'rgba(79, 70, 229, 1)',
 			SecondCol:'rgba(79, 70, 200, 1)',
 			dark_color : '#111827'
