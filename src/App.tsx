@@ -11,6 +11,7 @@ import OnlineBookingComponent
 import SignupForm from './components/pages/Connect/SignupForm';
 import ForgotPass from './components/pages/Connect/ForgotPass';
 import HomeStay from './components/pages/listing-stay-map/HomeStay';
+import ParentPage from './components/pages/Author/ParentPage';
 function App() {
   return (
     <Router>
@@ -21,6 +22,8 @@ function App() {
         <Route path="/sign-up" element={<SignupForm />} />
         <Route path="/forgot-pass" element={<ForgotPass />} />
         <Route path="/listing-stay-map" element={<HomeStay />} />
+        <Route path="/author" element={<ParentPage />} />
+
 
         {/* Tu peux utiliser UnderConstruction pour d'autres routes */}
       </Routes>
