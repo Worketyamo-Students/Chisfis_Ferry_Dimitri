@@ -2,6 +2,7 @@ import FormTitle from "@/components/pages/Connect/FormTitle"
 import TopAuthorCards from "./TopAuthorCards"
 import { Button } from "@/components/ui/button"
 import { useNavigate } from "react-router-dom"
+import Spinner from "./ShowMoreSpinner"
 const TopAuthorComponent = () => {
 
   const navigate = useNavigate();
@@ -22,6 +23,12 @@ const TopAuthorComponent = () => {
         </div>
         
         <div className="flex items-center justify-center gap-4 pt-[6rem]">
+  <div className="flex items-center justify-between">
+    <button className="flex items-center justify-center rounded-[50px] text-[1.7rem] px-[3rem] py-4 hover:bg-[#F9FAFB] bg-white dark:text-white dark:bg-[#111827] border border-opacity-50 border-solid border-color_g dark:hover:bg-[#1F2937] hover:shadow-xl duration-300 cursor-pointer">
+      <Spinner />
+      <span className="ml-4">Show me more</span>
+    </button>
+  </div>
         <Button title='SignUp' className=" w-fit h-[5rem] px-[3rem] rounded-full text-[1.7rem] bg-PrimaryCol hover:bg-SecondCol text-white" onClick={handleClick}>Become a host</Button>
         </div>
     </div>
