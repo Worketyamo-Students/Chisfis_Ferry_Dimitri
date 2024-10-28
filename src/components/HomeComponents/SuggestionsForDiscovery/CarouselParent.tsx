@@ -1,5 +1,8 @@
-import FormTitle from "@/components/pages/Connect/FormTitle"
-import { CarouselSize } from "./Carousel"
+import FormTitle from '@/components/pages/Connect/FormTitle';
+import { dataCarousels } from '@/functions/dataCarousels';
+
+import { CarouselSize } from './Carousel';
+
 const CarouselParent = () => {
   return (
     <>
@@ -9,7 +12,7 @@ const CarouselParent = () => {
         <FormTitle title="Suggestions for discovery" comment="Popular places to stay that Chisfis recommends for you"/>
         </div>
         <div className="flex items-center px-[5rem]">
-          <CarouselSize/>
+          <CarouselSize data={dataCarousels.suggCardsData} cardClassName="justify-start items-center flex flex-col gap-6"/>
         </div>
     </div>
 </div>

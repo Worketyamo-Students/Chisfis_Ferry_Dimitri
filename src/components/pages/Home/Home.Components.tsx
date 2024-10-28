@@ -1,8 +1,12 @@
-import HeaderComponent from '@/components/header.Component';
 import FooterComponent from '@/components/Footer.Component';
+import HeaderComponent from '@/components/header.Component';
 import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
-import CarouselParent from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
+import Carousel1 from '@/components/HomeComponents/carousel1/carousel1';
+import CarouselParent
+  from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
+
 import JoinNewsLetter from './Join-News/JoinNewsLetter';
+
 function HomeComponent() {
 
   return (
@@ -10,9 +14,10 @@ function HomeComponent() {
       <section className='flex flex-col text-[3rem] gap-28'>
 
          <HeaderComponent/>
-        <BenefitsComponent/>
-        <CarouselParent/>
-        <JoinNewsLetter/>
+         <Carousel1/>
+         <BenefitsComponent/>
+         <CarouselParent/>
+         <JoinNewsLetter/>
          <FooterComponent/>
 
       </section>
