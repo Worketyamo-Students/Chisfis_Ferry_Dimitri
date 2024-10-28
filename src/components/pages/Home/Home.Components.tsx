@@ -4,17 +4,19 @@ import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
 import CarouselParent from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
 import JoinNewsLetter from './Join-News/JoinNewsLetter';
 import TopAuthorComponent from '@/components/HomeComponents/TopAuthors/Parent';
+import ExploreParent from '@/components/HomeComponents/ExploreNearBy/ExploreParent';
 function HomeComponent() {
 
   return (
     <>
-      <section className='flex flex-col text-[3rem] gap-28'>
+      <section className='flex flex-col text-[3rem] gap-20'>
 
          <HeaderComponent/>
         <BenefitsComponent/>
         <CarouselParent/>
         <JoinNewsLetter/>
         <TopAuthorComponent/>
+        <ExploreParent/>
          <FooterComponent/>
 
       </section>
