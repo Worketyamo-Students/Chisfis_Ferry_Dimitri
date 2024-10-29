@@ -82,7 +82,6 @@ const Navbar1Component = () => {
                     </NavigationMenuItem>
                 </NavigationMenuList>
             </NavigationMenu>
-       
         </nav>
 
             <div className='space-x-4 flex items-center'>
