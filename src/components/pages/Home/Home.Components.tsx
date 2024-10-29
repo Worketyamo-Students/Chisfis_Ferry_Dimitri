@@ -1,37 +1,33 @@
-import HeaderComponent from '@/components/header.Component';
 import FooterComponent from '@/components/Footer.Component';
+import HeaderComponent from '@/components/header.Component';
 import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
-<<<<<<< HEAD
-import CarouselParent from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
-=======
 import Carousel1 from '@/components/HomeComponents/carousel1/carousel1';
+import ExploreParent
+  from '@/components/HomeComponents/ExploreNearBy/ExploreParent';
 import CarouselParent
   from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
+import TopAuthorComponent from '@/components/HomeComponents/TopAuthors/Parent';
 
->>>>>>> parent of 29888d5 (section Top 10 authors of the month)
+import ParentHowitWorks from './HowItWorks/Parent';
 import JoinNewsLetter from './Join-News/JoinNewsLetter';
-function HomeComponent() {
 
+function HomeComponent() {
   return (
     <>
-      <section className='flex flex-col text-[3rem] gap-28'>
 
-         <HeaderComponent/>
-<<<<<<< HEAD
-        <BenefitsComponent/>
-        <CarouselParent/>
-        <JoinNewsLetter/>
-=======
-         <Carousel1/>
-         <BenefitsComponent/>
-         <CarouselParent/>
-         <JoinNewsLetter/>
->>>>>>> parent of 29888d5 (section Top 10 authors of the month)
-         <FooterComponent/>
-
+      <section className='flex flex-col text-[3rem] gap-20'>
+        <HeaderComponent />
+        <Carousel1/>
+        <BenefitsComponent />
+        <ParentHowitWorks />
+        <CarouselParent />
+        <JoinNewsLetter />
+        <TopAuthorComponent />
+        <ExploreParent />
+        <FooterComponent />
       </section>
     </>
   )
 }
 
-export default HomeComponent
+export default HomeComponent;

@@ -1,93 +1,66 @@
-import { useState } from "react";
-import SuggCard from "./SuggCard";
+import { useState } from 'react';
+
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel";
+} from '@/components/ui/carousel';
 
+import SuggCard from './SuggCard';
 
-export function CarouselSize() {
-  const suggCardsData = [
-    {
-      image: "../../../src/assets/sugg1.svg",
-      title: "Enjoy the great cold",
-      properties: "188,288 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image.svg",
-      title: "Sleep in a floating way",
-      properties: "94,500 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image2.svg",
-      title: "Cool in the deep forest",
-      properties: "120,600 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image3.svg",
-      title: "In the billionaire's house",
-      properties: "55,300 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image.svg",
-      title: "City escapes",
-      properties: "210,400 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image2.svg",
-      title: "Lakeside relaxation",
-      properties: "98,200 properties",
-      to: "/listing-stay-map",
-    },
-    {
-      image: "../../../src/assets/Image3.svg",
-      title: "Snowy adventures",
-      properties: "68,000 properties",
-      to: "/listing-stay-map",
-    },
-  ];
-  const [currentIndex,setCurrentIndex] = useState(0)
-  const handleNext = ()=>{
-    setCurrentIndex((prevIndex)=>(prevIndex <suggCardsData.length-1 ? prevIndex+1 : prevIndex));
+// Interface pour chaque objet de données
+interface CardData {
+  image: string;
+  title: string;
+  properties: string;
+  to: string;
+}
+
+// Interface pour les props de CarouselSize
+interface CarouselSizeProps {
+  data: CardData[];
+  cardClassName?: string; // Prop optionnelle pour les classes CSS de SuggCard
+}
+
+export const CarouselSize = ({ data, cardClassName }: CarouselSizeProps) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex < data.length - 1 ? prevIndex + 1 : prevIndex));
   };
-  const handlePrevious = ()=>{
-    setCurrentIndex((prevIndex)=>(prevIndex>0 ? prevIndex-1 : prevIndex));
-  }
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : prevIndex));
+  };
+
   return (
     <Carousel
       opts={{
-        align: "start", // Aligner les éléments au début
+        align: "start",
       }}
       className="w-full"
     >
-
       <CarouselContent className="flex space-x-2">
-        {suggCardsData.map((card, index) => (
+        {data.map((card, index) => (
           <CarouselItem
             key={index}
-            className="md:basis-1/2 lg:basis-1/4 flex-shrink-0" // Affiche 2 éléments sur medium et 4 sur large
+            className="md:basis-1/2 lg:basis-1/4 flex-shrink-0"
           >
             <SuggCard
               image={card.image}
               properties={card.properties}
               title={card.title}
               to={card.to}
-            />
+              className={cardClassName} // Ajouter la classe CSS personnalisée ici
+  />
           </CarouselItem>
         ))}
       </CarouselContent>
 
-      <CarouselPrevious className="p-12 bg-white border border-solid dark:bg-dark_color"/>
-      <CarouselNext />
+      <CarouselPrevious className="border border-solid dark:bg-dark_color w-[5rem] h-[5rem]" />
+      <CarouselNext className="border border-solid dark:bg-dark_color w-[5rem] h-[5rem]" />
     </Carousel>
   );
-}
-
+};

@@ -57,7 +57,8 @@ module.exports = {
 			color_g:'#9CA3AF',
 			PrimaryCol:'rgba(79, 70, 229, 1)',
 			SecondCol:'rgba(79, 70, 200, 1)',
-			dark_color : '#111827'
+			dark_color : '#111827',
+			Secong_dark_color:'#0E131F',
   		},
 		  fontFamily: {
 			Inter:'var(--Inter)',
