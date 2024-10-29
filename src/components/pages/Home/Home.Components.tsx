@@ -4,6 +4,8 @@ import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
 import Carousel1 from '@/components/HomeComponents/carousel1/carousel1';
 import CarouselParent
   from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
+import TopAuthorsComponent
+  from '@/components/HomeComponents/top10Authors/top10Authors';
 
 import JoinNewsLetter from './Join-News/JoinNewsLetter';
 
@@ -18,8 +20,9 @@ function HomeComponent() {
          <BenefitsComponent/>
          <CarouselParent/>
          <JoinNewsLetter/>
+         <TopAuthorsComponent/>
          <FooterComponent/>
-
+         
       </section>
     </>
   )
