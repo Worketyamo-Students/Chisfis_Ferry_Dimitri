@@ -5,6 +5,7 @@ import CarouselParent from '@/components/HomeComponents/SuggestionsForDiscovery/
 import JoinNewsLetter from './Join-News/JoinNewsLetter';
 import TopAuthorComponent from '@/components/HomeComponents/TopAuthors/Parent';
 import ExploreParent from '@/components/HomeComponents/ExploreNearBy/ExploreParent';
+import ParentHowitWorks from './HowItWorks/Parent';
 function HomeComponent() {
 
   return (
@@ -13,6 +14,7 @@ function HomeComponent() {
 
          <HeaderComponent/>
         <BenefitsComponent/>
+        <ParentHowitWorks/>
         <CarouselParent/>
         <JoinNewsLetter/>
         <TopAuthorComponent/>

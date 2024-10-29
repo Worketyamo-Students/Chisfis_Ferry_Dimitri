@@ -20,7 +20,7 @@ const ExploreCard = () => {
   return (
     <div className="lg:flex lg:flex-wrap gap-[3.5rem] justify-center ">
       {ExplorePlaces.map((place,index)=>(
-        <div key={index} className="flex flex-col gap-0 rounded-[24px] px-[2rem] pt-[1rem] pb-[2rem] hover:bg-[#F9FAFB] bg-white dark:text-white dark:bg-[#111827] border border-opacity-2 border-solid border-color_g dark:hover:bg-[#1F2937] hover:shadow-xl w-[32rem] cursor-pointer"  onClick={handleNavigate}>
+        <div key={index} className="flex flex-col gap-0 rounded-[24px] px-[2rem] pt-[1rem] pb-[2rem] hover:bg-[#F9FAFB] bg-white dark:text-white dark:bg-[#111827] border border-opacity-2 border-solid border-color_g dark:hover:bg-[#1F2937] hover:shadow-xl lg:w-[29rem] xl:w-[30rem] cursor-pointer"  onClick={handleNavigate}>
           <h5 className="px-4 w-[5rem] text-[1.3rem] bg-[#F3F4F6] rounded-full dark:text-black self-end">{place.suits}</h5>
           <div className="flex space-x-4 items-center gap-4">
             <div className="rounded-full"><img src={place.path} /></div>
