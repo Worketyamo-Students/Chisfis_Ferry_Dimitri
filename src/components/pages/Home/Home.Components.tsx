@@ -4,6 +4,8 @@ import BenefitsComponent from '@/components/HomeComponents/Benefits.Component';
 import Carousel1 from '@/components/HomeComponents/carousel1/carousel1';
 import ExploreParent
   from '@/components/HomeComponents/ExploreNearBy/ExploreParent';
+import HotelCardExperienreParent
+  from '@/components/HomeComponents/HotelcardExperience/HotelCarExperience';
 import CarouselParent
   from '@/components/HomeComponents/SuggestionsForDiscovery/CarouselParent';
 import TopAuthorComponent from '@/components/HomeComponents/TopAuthors/Parent';
@@ -17,6 +19,7 @@ function HomeComponent() {
 
       <section className='flex flex-col text-[3rem] gap-20'>
         <HeaderComponent />
+        <HotelCardExperienreParent/>
         <Carousel1/>
         <BenefitsComponent />
         <ParentHowitWorks />

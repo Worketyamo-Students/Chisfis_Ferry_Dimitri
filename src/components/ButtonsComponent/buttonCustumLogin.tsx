@@ -1,15 +1,31 @@
-import { Button } from '../ui/button';
 import { useNavigate } from 'react-router-dom';
-const ButtonComponent = ()=>{
-const navigate = useNavigate();
 
-   const handleClick = () =>{
-      navigate('/login')
-   }
- return (
-   <>
-    <Button title='SignUp' className=" w-fit h-[5rem] px-[3rem] rounded-full text-[1.7rem] bg-PrimaryCol hover:bg-SecondCol text-white" onClick={handleClick}>SignUp</Button>
-    </>
- )
+import { Button } from '../ui/button';
+
+interface PropsButton {
+   chemin: string;
+   text: string;
+   title: string;
 }
- export default ButtonComponent
+
+const ButtonCustumComponent: React.FC<PropsButton> = ({ chemin, text ,title}) => {
+   const navigate = useNavigate();
+
+   const handleClick = () => {
+      navigate(chemin);  // Passer `chemin` comme string directement
+   };
+
+   return (
+      <>
+         <Button 
+            title={title} 
+            className="w-fit h-[5rem] px-[3rem] rounded-full text-[1.7rem] bg-PrimaryCol hover:bg-SecondCol text-white" 
+            onClick={handleClick}
+         >
+            {text}
+         </Button>
+      </>
+   );
+};
+
+export default ButtonCustumComponent;

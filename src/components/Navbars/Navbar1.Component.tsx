@@ -7,7 +7,7 @@ import {
 
 import { ButtonIcon } from '../BlackWhiteButton';
 import PopoverCustum from '../ButtonIcon';
-import ButtonComponent from '../ButtonsComponent/buttonCustumLogin';
+import ButtonCustumComponent from '../ButtonsComponent/buttonCustumLogin';
 import NavMenuTriggerComponent from '../componentCustum/NavMenuCustum';
 import NavMenuComponent from '../componentCustum/NavMenuLinkCustum';
 
@@ -87,7 +87,7 @@ const Navbar1Component = () => {
             <div className='space-x-4 flex items-center'>
             <ButtonIcon/>
             <PopoverCustum/>
-            <ButtonComponent/>
+            <ButtonCustumComponent chemin='/login' text='Sign Up' title='signup'/>
             </div>
  </div>
 </>

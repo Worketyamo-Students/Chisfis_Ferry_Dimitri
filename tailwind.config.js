@@ -58,6 +58,7 @@ module.exports = {
 			PrimaryCol:'rgba(79, 70, 229, 1)',
 			SecondCol:'rgba(79, 70, 200, 1)',
 			dark_color : '#111827',
+			black_col:'rgba(17, 24, 39, 1)',
 			Secong_dark_color:'#0E131F',
   		},
 		  fontFamily: {
